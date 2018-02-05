@@ -1,0 +1,1149 @@
+    /*========================CSS Reset====================================*/
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /*========================generator====================================*/
+    
+    body {
+        font-family: 'Crimson Text', serif;
+    }
+    
+    .container {
+        width: 1110px;
+        margin: 0 auto;
+    }
+    /*
+font-family: 'Poppins', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Yesteryear', cursive;
+font-family: 'Mr Dafoe', cursive;*/
+    /*=====================header======================================*/
+    
+    .header {
+        background: url(../img/header-bg.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .header:after {
+        content: '';
+        position: absolute;
+        width: 343px;
+        height: 310px;
+        background: url(../img/Tomatoes.png) no-repeat;
+        bottom: -24%;
+        right: 16%;
+    }
+    
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-menu a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s ease;
+    }
+    
+    .header-menu a:hover {
+        color: #fdb902;
+        border-bottom: 1px solid #fdb902;
+    }
+    
+    .header-btn {
+        background: none;
+        border: 1px solid #fff;
+        padding: 15px 32px 14px 45px;
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .header-btn:hover {
+        background: #fdb902;
+    }
+    
+    .header .fa-clock-o {
+        position: relative;
+    }
+    
+    .header .fa-clock-o:before {
+        position: absolute;
+        top: 50%;
+        transform: translate(-180%, -50%);
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .banner {
+        margin-top: 242px;
+        padding-bottom: 300px;
+    }
+    
+    .banner>h1 {
+        font-family: 'Yesteryear', cursive;
+        font-size: 220px;
+        color: #fdb902;
+        position: relative;
+        text-align: center;
+    }
+    
+    .banner>h1>span {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: relative;
+        top: -17px;
+    }
+    
+    .branch:after {
+        content: '';
+        width: 12%;
+        height: 50%;
+        background: url(../img/branch.png) no-repeat;
+        background-size: 126px;
+        position: absolute;
+        top: -25px;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+    /*======================content=====================================*/
+    
+    .today-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 322px;
+    }
+    
+    .salad,
+    .meals,
+    .since {
+        border: 2px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .salad>img,
+    .meals>img,
+    .since>img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .salad {
+        margin-bottom: 160px;
+    }
+    
+    .food-info {
+        text-align: left;
+    }
+    
+    .todays {
+        padding-left: 173px;
+    }
+    
+    .food-info>h3 {
+        font-family: 'Yesteryear', cursive;
+        color: #e5e5e5;
+        font-size: 75px;
+    }
+    
+    .food-info .food-num {
+        position: relative;
+        bottom: 0%;
+        right: 50%;
+        font-family: 'Poppins', sans-serif;
+        color: #4b4141;
+        font-size: 36px;
+        font-weight: 700;
+        padding-bottom: 35px;
+    }
+    
+    .food-num>span {
+        color: #fdb902;
+    }
+    
+    .food-info .meals-num {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        color: #4b4141;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 109px;
+    }
+    
+    .meals-num>span {
+        color: #fdb902;
+    }
+    
+    .today-menu .meals-info>h2 {
+        padding-bottom: 8px;
+    }
+    
+    .today-menu .meals-info>span {
+        padding-top: 0;
+        padding-bottom: 14px;
+    }
+    
+    .meals-text {
+        padding-bottom: 30px;
+    }
+    
+    .food-info>h2 {
+        width: 330px;
+        font-family: 'Poppins', sans-serif;
+        color: #4b4141;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        position: relative;
+        top: -20px;
+    }
+    
+    .food-info>h2:before {
+        content: '';
+        width: 97px;
+        height: 1px;
+        background: #4b4141;
+        top: 25%;
+        left: -38%;
+        position: absolute;
+    }
+    
+    .food-info>p {
+        width: 320px;
+        text-align: left;
+        color: #787878;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .food-info>span {
+        color: #fdb902;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 35px;
+        padding-bottom: 19px;
+    }
+    
+    .food-info>a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        color: #4b4141;
+        border-bottom: 2px solid #a5a0a0;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    
+    .food-info>a:hover,
+    .next-event>a:hover {
+        color: #fdb902;
+        border-bottom: 2px solid #fdb902;
+    }
+    
+    .meals-info {
+        margin-right: 124px;
+    }
+    
+    .today-menu .meals-info>h2:before {
+        content: '';
+        width: 195px;
+        height: 1px;
+        background: linear-gradient(to left, #4b4141 50%, #fff 50%);
+        top: 31%;
+        left: -62%;
+        position: absolute;
+    }
+    
+    .food-info>a:before {
+        content: '';
+        width: 32px;
+        height: 1px;
+        background: #4b4141;
+        position: absolute;
+        right: -35px;
+        top: 50%;
+    }
+    
+    .food-info>a:after {
+        content: '';
+        border: 3px solid transparent;
+        border-left: 3px solid #4b4141;
+        position: absolute;
+        top: 53%;
+        right: -41px;
+        transform: translateY(-50%);
+    }
+    
+    .meals {
+        margin-bottom: 235px;
+    }
+    /*=======================our-story=====================================*/
+    
+    .story-bg {
+        background: #f7f7f7;
+        padding-bottom: 220px;
+    }
+    
+    .story {
+        text-align: center;
+        position: relative;
+    }
+    
+    .cook>img {
+        position: absolute;
+        bottom: -216px;
+        margin-left: 76px;
+    }
+    
+    .our-story {
+        width: 525px;
+        padding-top: 145px;
+    }
+    
+    .our-story>span {
+        font-family: 'Yesteryear', cursive;
+        font-size: 295px;
+        color: #eee;
+        position: absolute;
+        user-select: none;
+        left: -125px;
+        bottom: 29px;
+    }
+    
+    .our-story>h2 {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 35px;
+        position: relative;
+    }
+    
+    .our-story>h2:before {
+        content: '';
+        width: 110px;
+        height: 25px;
+        background: url(../img/logo-2.png) no-repeat;
+        position: absolute;
+        right: 39%;
+        top: -35px;
+    }
+    
+    .our-story>p {
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        color: #787878;
+        padding-top: 35px;
+        position: relative;
+    }
+    
+    .our-story .jordi-cruz {
+        margin-top: 55px;
+        color: #505050;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+    }
+    
+    .our-story .jordi-cruz:before {
+        content: '';
+        width: 200px;
+        height: 1px;
+        background: radial-gradient(at 50% 100%, transparent 0px, transparent 73px, #444243 73px, #444243 200px, transparent 200px, transparent 100%);
+        position: absolute;
+        right: 50%;
+        top: 82%;
+        transform: translate(50%);
+    }
+    
+    .our-story .jordi-cruz:after {
+        content: '';
+        width: 165px;
+        height: 52px;
+        background: url(../img/Jordi-Cruz.png) no-repeat;
+        position: absolute;
+        right: 50%;
+        top: 142%;
+        transform: translate(50%);
+    }
+    /*=======================info-video=================================*/
+    
+    .info-video {
+        background: url(../img/info-video-bg.png) no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -24px;
+        padding-bottom: 350px;
+    }
+    
+    .myvideo {
+        width: 1000px;
+    }
+    
+    .video {
+        top: 240px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        height: 1px;
+        min-height: 400px;
+    }
+    
+    .video>h2 {
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 150px;
+        color: #fdb902;
+        position: relative;
+        text-align: center;
+        left: 0%;
+    }
+    
+    .video>h2>span {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        position: relative;
+        top: -17px;
+    }
+    
+    .video>video {
+        display: block;
+        height: auto;
+        position: absolute;
+        top: -45%;
+        opacity: 0;
+        border: 2px solid #6b6b74;
+        transition: all .5s ease;
+    }
+    
+    .video>video.showed {
+        opacity: 1;
+        border: 2px solid #6b6b74;
+    }
+    
+    .info-video:before {
+        content: '';
+        position: absolute;
+        width: 403px;
+        height: 380px;
+        background: url(../img/egg.png) no-repeat;
+        bottom: -29%;
+        left: 15%;
+    }
+    
+    .video-btn {
+        color: #fff;
+        width: 50px;
+        position: absolute;
+        left: 50%;
+        top: 59%;
+        transform: translateY(100%);
+        font-size: 22px;
+    }
+    
+    .video-btn:after {
+        content: '';
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        left: 15%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .video-btn.hidden {
+        transition: all .1s linear 1s;
+        opacity: 0;
+    }
+    
+    .video:hover .video-btn.hidden {
+        opacity: 1;
+    }
+    /*=======================since====================================*/
+    
+    .since-food {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 200px;
+        margin-bottom: 135px;
+    }
+    
+    .next-event {
+        padding: 66px 0 0 178px;
+    }
+    
+    .next-event-btn {
+        background: none;
+        border: 4px solid #4b4141;
+        padding: 18px 17px 13px 28px;
+        position: relative;
+        cursor: pointer;
+        width: 190px;
+        margin-bottom: 36px;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    
+    .next-event-btn:hover {
+        background: #fdb902;
+    }
+    
+    .next-event-btn:before {
+        content: '';
+        width: 216px;
+        height: 1px;
+        background: #4b4141;
+        top: 50%;
+        left: -85%;
+        position: absolute;
+    }
+    
+    .next-event-btn>a {
+        text-decoration: none;
+        color: #4b4141;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .next-event>p {
+        width: 360px;
+        text-align: left;
+        color: #787878;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        margin-bottom: 34px;
+        line-height: 1.5;
+    }
+    
+    .next-event>a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        color: #4b4141;
+        border-bottom: 2px solid #a5a0a0;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        transition: all 0.5s ease;
+    }
+    
+    .next-event>a:before {
+        content: '';
+        width: 32px;
+        height: 1px;
+        background: #4b4141;
+        position: absolute;
+        right: -33px;
+        top: 50%;
+    }
+    
+    .next-event>a:after {
+        content: '';
+        border: 3px solid transparent;
+        border-left: 3px solid #4b4141;
+        position: absolute;
+        top: 53%;
+        right: -41px;
+        transform: translateY(-50%);
+    }
+    
+    .since {
+        position: relative;
+    }
+    
+    .since::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../img/chef_night.png);
+    }
+    /*====================reservation================================*/
+    
+    .reservation {
+        background: url(../img/reservation-icon-bg.png) no-repeat 50% 50%, #f7f7f7;
+        text-align: center;
+    }
+    
+    .book-it>h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: #4b4141;
+        padding-top: 100px;
+        text-transform: uppercase;
+    }
+    
+    .book-it>p {
+        width: 285px;
+        padding-left: 37%;
+        color: #787878;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        margin-bottom: 34px;
+        line-height: 1.5;
+    }
+    
+    .reservation label {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .reservation label:before {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        font-size: 16px;
+        color: #787878;
+    }
+    
+    .entry-input {
+        border: none;
+        border-radius: 4px;
+        color: #000;
+        background: #fff;
+        width: 260px;
+        height: 50px;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Crimson Text', serif;
+        font-size: 16px;
+        margin: 17px;
+    }
+    
+    .meeting-btm {
+        outline: none;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #383033;
+        border-radius: 3px;
+        background: #383033;
+        padding: 22px 50px;
+        display: inline-block;
+        margin-top: 50px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        margin-bottom: 175px;
+    }
+    
+    .meeting-btm:hover {
+        color: #000;
+        text-decoration: none;
+        background: none;
+    }
+    
+    input {
+        cursor: pointer;
+    }
+    /*==================contact=======================================*/
+    
+    .contact {
+        background: url(../img/contact-bg.png) no-repeat;
+        background-size: cover;
+        position: relative;
+        top: -50px;
+        z-index: 1;
+    }
+    
+    .contact>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 300px;
+        padding-bottom: 176px;
+    }
+    
+    .information {
+        padding-top: 175px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .information>h2 {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .info-content {
+        margin-top: 30px;
+    }
+    
+    .info-content>h3 {
+        color: #c08e06;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    
+    .info-content p {
+        font-family: 'Crimson Text', serif;
+        color: #fff;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    
+    .info-content a {
+        text-decoration: none;
+        color: #c08e06;
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .hours {
+        position: relative;
+        left: -150px;
+    }
+    /*===================footer=====================================*/
+    
+    .footer {
+        background: #000;
+        position: relative;
+        top: -120px;
+    }
+    
+    .footer-container {
+        text-align: center;
+        padding-bottom: 35px;
+        padding-top: 100px;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-icon {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 20px;
+        transition: all 0.5s ease;
+    }
+    
+    .footer-container p {
+        color: #4f4e4e;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .fa-facebook:hover,
+    .fa-vimeo:hover,
+    .fa-behance:hover {
+        color: #0A7DA3;
+    }
+    
+    .fa-twitter:hover {
+        color: #09B2EB;
+    }
+    
+    .fa-dribbble:hover {
+        color: #EB09CD;
+    }
+    /*====================media================================*/
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (max-width: 1200px) {
+        .container {
+            width: 960px;
+        }
+        .today-menu {
+            justify-content: space-around;
+            padding-top: 230px;
+        }
+        .todays {
+            padding-bottom: 70px;
+        }
+        .meals {
+            margin-bottom: 40px;
+        }
+        .meals-info {
+            padding-bottom: 70px;
+        }
+        .video>video {
+            top: -18%;
+        }
+        .myvideo {
+            width: 800px;
+        }
+        .our-story>span {
+            font-size: 221px;
+            left: 32px;
+        }
+        .since-food {
+            justify-content: space-around;
+        }
+        .next-event {
+            padding: 66px 0 70px 178px;
+        }
+    }
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (max-width: 992px) {
+        .container {
+            width: 730px;
+        }
+        .branch:after {
+            width: 20%;
+        }
+        .video>video {
+            top: 0%;
+        }
+        .myvideo {
+            width: 600px;
+        }
+        .cook {
+            display: none;
+        }
+        .our-story {
+            padding-top: 145px;
+            width: 100%;
+        }
+        .hours {
+            left: -50px;
+        }
+    }
+    /* Small Devices, Tablets */
+    
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 440px;
+        }
+        .header-top {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .header-top img {
+            margin-bottom: 30px;
+        }
+        .header-btn {
+            margin-top: 30px;
+        }
+        .branch:after {
+            width: 27%;
+            height: 99%;
+        }
+        .banner>h1 {
+            font-size: 115px;
+        }
+        .banner>h1>span {
+            font-size: 13px;
+        }
+        .food-info .food-num {
+            right: 0;
+        }
+        .todays {
+            padding-left: 0;
+        }
+        .meals-info {
+            margin-right: 0;
+        }
+        .food-info>h2:before {
+            display: none;
+        }
+        .our-story {
+            width: 100%;
+        }
+        .info-video:before {
+            left: 0%;
+        }
+        .video>h2 {
+            font-size: 95px;
+        }
+        .video>h2>span {
+            font-size: 13px;
+            top: -3px;
+        }
+        .video>video {
+            top: -10%;
+        }
+        .video-btn.hidden {
+            opacity: 1;
+        }
+        .myvideo {
+            width: 400px;
+        }
+        .our-story>h2 {
+            width: 100%;
+        }
+        .our-story>p {
+            width: 100%;
+        }
+        .our-story>span {
+            display: none;
+        }
+        .next-event-btn>a {
+            text-decoration: none;
+        }
+        .next-event-btn:before {
+            display: none;
+        }
+        .next-event {
+            padding: 45px 0 70px 30px;
+        }
+        .book-it>p {
+            padding-left: 18%;
+        }
+        .hours {
+            left: 0px;
+        }
+    }
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (max-width: 480px) {
+        .container {
+            width: 300px;
+        }
+        .header-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .header-menu li {
+            padding-bottom: 30px;
+        }
+        .branch:after {
+            width: 50%;
+        }
+        .banner>h1 {
+            font-size: 84px;
+        }
+        .header:after {
+            display: none;
+        }
+        .info-video:before {
+            display: none;
+        }
+        .myvideo {
+            width: 290px;
+        }
+        .video>h2 {
+            font-size: 70px;
+        }
+        .today-menu {
+            justify-content: baseline;
+            padding-top: 20px;
+        }
+        .food-info>h3 {
+            font-size: 67px;
+        }
+        .food-info>h2 {
+            font-size: 33px;
+        }
+        .food-info>p {
+            width: 270px;
+        }
+        .food-info>h2 {
+            width: 270px;
+        }
+        .next-event>p {
+            width: 200px;
+        }
+        .next-event {
+            padding: 45px 0 70px 0px;
+        }
+        .book-it>p {
+            width: 185px
+        }
+        .our-story>h2:before {
+            right: 30%;
+        }
+        .since::before {
+            background-position: 60% 60%;
+        }
+    }
+    /* Custom, iPhone Retina */
+    
+    @media only screen and (max-width: 320px) {}
+    /*================================================================*/
